@@ -27,7 +27,7 @@ options.add_argument("--start-maximized")
 prefs = {"profile.managed_default_content_settings.images": 1}
 options.add_experimental_option("prefs", prefs)
 options.add_argument("blink-settings=imagesEnabled=true")
-options.add_argument("start-maximized")
+
 
 options.add_argument(f"user-agent={get_user_agent[f'{x}']}")
 proxy_options = {"proxy": {"https": f"http://{proxy[f'{x}']}"}}
